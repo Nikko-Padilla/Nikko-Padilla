@@ -1,0 +1,61 @@
+.nav-bar {
+    background-color: #333; /* Dark background for the navigation bar */
+    overflow: hidden; /* Ensures that the content is properly contained */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Space around the items */
+}
+/* Basic reset for margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: #333; /* Dark background for the navigation bar */
+    padding: 10px 20px; /* Space around the items */
+}
+
+.nav {
+    list-style: none; /* Remove bullets from list */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the navigation items */
+}
+
+.nav-item {
+    margin: 0 15px; /* Space between each navigation item */
+}
+
+.nav-link {
+    color: white; /* Text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Space around the text inside the links */
+    display: block; /* Make the links fill their container */
+    border-radius: 4px; /* Optional: rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.nav-link.active {
+    background-color: #575757; /* Background for the active link */
+}
+
+.nav-link:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+.nav-link.disabled {
+    color: #888; /* Gray color for disabled links */
+    pointer-events: none; /* Disable clicking on the link */
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Space between each item when stacked */
+    }
+}
